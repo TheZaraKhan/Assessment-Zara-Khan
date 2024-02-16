@@ -1,0 +1,422 @@
+// Colors
+$body-bg: #fafafa !default;
+$body-color: #121212 !default;
+
+// Define theme colors
+
+$theme-colors: (
+  "secondary": #ff5634,
+  "light": #ffffff,
+  "black": #121212,
+);
+
+// Font imports
+@font-face {
+  font-family: "Metropolis";
+  src: url("../src/Metropolis-Font/Metropolis-Black.otf") format("opentype");
+  font-weight: 900; /* Black */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("../src/Metropolis-Font/Metropolis-Bold.otf") format("opentype");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("../src/Metropolis-Font/Metropolis-ExtraBold.otf") format("opentype");
+  font-weight: 800; /* Extra Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("../src/Metropolis-Font/Metropolis-ExtraLight.otf")
+    format("opentype");
+  font-weight: 200; /* Extra Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("../src/Metropolis-Font/Metropolis-Light.otf") format("opentype");
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("../src/Metropolis-Font/Metropolis-Medium.otf") format("opentype");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("../src/Metropolis-Font/Metropolis-Regular.otf") format("opentype");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("../src/Metropolis-Font/Metropolis-SemiBold.otf") format("opentype");
+  font-weight: 600; /* Semi-Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("../src/Metropolis-Font/Metropolis-Thin.otf") format("opentype");
+  font-weight: 100; /* Thin */
+  font-style: normal;
+}
+
+// Base font family
+$font-family-base: "Metropolis", sans-serif;
+
+// Bootstrap import
+@import "../node_modules/bootstrap/scss/bootstrap";
+body {
+  background-color: $body-bg;
+  color: $body-color;
+}
+// Navbar
+.nav-link {
+  color: #121212;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s;
+
+  &:hover {
+    color: map-get($theme-colors, "secondary");
+  }
+}
+.navbar-nav .nav-item .nav-link.active {
+  color: map-get($theme-colors, "secondary");
+}
+// Buttons
+.btn {
+  font-size: 16px;
+  padding: 12px 24px;
+  font-weight: 500;
+  transition: ease-in-out 0.2s;
+}
+
+.btn-primary {
+  background-color: map-get($theme-colors, "secondary");
+  color: map-get($theme-colors, "light");
+
+  &:hover {
+    background-color: #e23f1f;
+  }
+}
+
+.btn-light {
+  background-color: map-get($theme-colors, "light");
+  color: #121212;
+
+  &:hover {
+    color: map-get($theme-colors, "light");
+    background-color: map-get($theme-colors, "secondary");
+  }
+}
+
+.custom-shadow {
+  box-shadow: 0 2px 12px 0 rgba(16, 16, 16, 0.08);
+}
+.img-shadow {
+  box-shadow: 0 14px 42px 0 rgba(16, 16, 16, 0.14);
+}
+.navbar-collapse {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+// nav dropdown
+
+// Remove existing styles for dropdown-toggle::after
+.dropdown-toggle::after {
+  content: none; // Remove the existing content
+}
+
+// Add styles for the icon inside the dropdown-toggle link
+.dropdown-toggle i {
+  display: inline-block;
+  margin-left: 0.5em; // Adjust margin as needed
+}
+
+// Optional: Adjust the padding to ensure the icon has enough space
+.dropdown-toggle {
+  padding-right: 2rem; // Adjust as needed
+}
+
+// Styling for the dropdown toggle icon
+.dropdown-toggle .bi-chevron-down {
+  transition: transform 0.3s ease-in-out; /* Add transition for rotation */
+}
+
+// Styling for the dropdown toggle icon rotation on hover
+.dropdown-toggle:hover .bi-chevron-down {
+  transform: rotate(-180deg) translateY(3px); /* Rotate the icon 180 degrees on hover */
+}
+.dropdown-toggle:hover,
+.dropdown-toggle:hover span {
+  color: #ff5634;
+}
+
+// Styling for the dropdown link and icon color on hover
+.dropdown-toggle:hover,
+.dropdown-toggle:hover .bi-chevron-down {
+  color: #ff5634; /* Change to your desired hover color */
+}
+
+// Styling for the dropdown item text
+.dropdown-item-text {
+  font-weight: 400;
+  color: #525151;
+  transition: color 0.3s;
+  &:hover {
+    color: #ff5634; /* Change to your desired hover color */
+    background-color: transparent; /* Change background color if needed */
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .dropdown-menu {
+    width: max-content;
+    box-shadow: 0 2px 12px 0 rgba(16, 16, 16, 0.08);
+  }
+}
+.dropdown-header {
+  font-weight: 700;
+  font-size: 18px;
+  color: #121212;
+}
+
+.dropdown-item {
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.dropdown-item-text {
+  font-weight: 400;
+  color: #525151;
+  &:hover {
+    color: map-get($theme-colors, "secondary");
+    background-color: white;
+  }
+}
+
+@media (max-width: 991px) {
+  .dropdown-menu {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: none;
+    box-shadow: none;
+  }
+}
+
+.dropdown-menu .emphasize-link {
+  margin-top: 5px;
+  color: map-get($theme-colors, "secondary");
+  font-weight: bold;
+  max-width: max-content;
+  background-color: white;
+  border-bottom: 3px solid #ff5634;
+
+  &:hover {
+    color: map-get($theme-colors, "black");
+
+    border-bottom: 3px solid #121212;
+  }
+}
+
+// body content
+
+p {
+  color: #656565;
+}
+p,
+h5 {
+  font-size: 16px;
+}
+
+@include media-breakpoint-up(lg) {
+  p,
+  h5 {
+    font-size: 18px;
+  }
+}
+
+.h1 {
+  font-size: 62px;
+  font-weight: 700;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 52px;
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: 43px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 36px;
+  }
+}
+
+.h2 {
+  font-size: 56px;
+  font-weight: 700;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 48px;
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: 40px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 33px;
+  }
+}
+
+.h3 {
+  font-size: 44px;
+  font-weight: 700;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 38px;
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: 32px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 28px;
+  }
+}
+
+.h4 {
+  font-size: 24px;
+  font-weight: 700;
+
+  @include media-breakpoint-down(md) {
+    font-size: 22px;
+  }
+}
+
+.h4b {
+  font-size: 28px;
+  font-weight: 700;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 23px;
+  }
+}
+
+.responsive-img {
+  width: 70%;
+
+  @include media-breakpoint-up(lg) {
+    width: auto;
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 50%;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 70%;
+  }
+
+  @include media-breakpoint-down(xs) {
+    width: 70%;
+  }
+}
+
+// read more
+.readmore {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.card-hover {
+  cursor: pointer;
+  box-shadow: 0 2px 12px 0 rgba(16, 16, 16, 0.08);
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; // Add transition for the transform property
+
+  &:hover {
+    box-shadow: 0 14px 42px 0 rgba(16, 16, 16, 0.14);
+    transform: translateY(-8px); // Offset the card 10 pixels up on hover
+  }
+}
+
+.icon-move {
+  margin-left: 10px; /* Adjust the spacing between the icon and the "Read more" text */
+}
+
+.card-hover:hover .readmore .icon-move {
+  transform: translate(
+    -6px,
+    -6px
+  ); // Offset the icon 6 pixels up and 6 pixels to the left on hover
+}
+
+// footer
+
+.logo {
+  width: 35%;
+  max-width: 300px;
+}
+
+.emphasize-link2 {
+  max-width: max-content;
+  margin-top: 5px;
+  color: map-get($theme-colors, "secondary");
+  font-weight: bold;
+  background-color: none;
+
+  border-bottom: 3px solid #ff5634;
+
+  &:hover {
+    color: map-get($theme-colors, "black");
+
+    border-bottom: 3px solid #121212;
+  }
+}
+
+hr {
+  opacity: 0.1;
+}
+
+// section 4
+
+.scroll-section {
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+// animations
+.floating-img1 {
+  position: absolute;
+  width: 45%;
+  left: -5%;
+  bottom: 15%;
+}
+.floating-img2 {
+  position: absolute;
+  width: 55%;
+  right: -10%;
+  bottom: 5%;
+}

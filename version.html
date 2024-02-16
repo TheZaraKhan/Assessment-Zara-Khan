@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Icon -->
+    <link href="./node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/custom.css">
+
+</head>
+
+<body>
+    <!-- ---------   NAV ------------- -->
+    <div class="bg-light py-3 custom-shadow">
+        <div class="  container-lg ">
+            <nav class="navbar navbar-expand-lg">
+
+                <!-- Brand -->
+                <a class="navbar-brand ms-0 me-auto" href=""> <img src="./src/images/logo.svg" alt=""> </a>
+
+                <ul class="navbar-nav me-2 me-lg-3 mx-1 mb-lg-0 align-items-center d-flex d-lg-none ">
+                    <li class="nav-item ps-lg-1 pe-lg-0 pe-3 pt-1 pt-lg-0">
+                        <a class="nav-link" aria-current="page" href="#">Cart(0)</a>
+                    </li>
+                </ul>
+                <div class="d-md-flex d-none    d-lg-none">
+                    <button class="btn btn-light border rounded-3 shadow-sm mx-2" type="submit">Download App</button>
+                    <button class="btn btn-primary border-0 text-600 rounded-3 mx-2 fw-bold"
+                        type="submit">Register</button>
+                </div>
+                <!-- Toggler button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mt-1 mb-lg-0">
+                        <li class="nav-item ps-2">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item ps-2">
+                            <a class="nav-link active" aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item ps-2">
+                            <a class="nav-link" aria-current="page" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item ps-2 dropdown">
+                            <a class="shadow-none nav-link dropdown-toggle" href="#" role="button" id="navbarDropdown"
+                                data-bs-toggle="dropdown" aria-expanded="true">
+                                <span>Pages</span><i class="bi bi-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu rounded-4  bg-white   dropdown-menu-lg "
+                                aria-labelledby="navbarDropdown">
+                                <div class="container-lg  ">
+                                    <div class="row py-lg-3 px-lg-5 px-0 mt-2 mb-4  ">
+                                        <div class="col-lg-6  gy-2  px-lg-auto px-0  ">
+                                            <ul class=" list-unstyled  ">
+                                                <li>
+                                                    <span class=" dropdown-header mb-2 px-0  ">Menu</span>
+                                                </li>
+                                                <div class="row">
+                                                    <div class="col-6 px-0 ">
+                                                        <li><a
+                                                                class="  dropdown-item dropdown-item-text ps-2 ms-1 link-underline  link-underline-opacity-0  text-gray-600  ">Home</a>
+                                                        </li>
+                                                        <li><a
+                                                                class=" dropdown-item dropdown-item-text ps-2 ms-1 link-underline  link-underline-opacity-0  text-gray-600  ">about</a>
+                                                        </li>
+                                                        <li><a
+                                                                class=" dropdown-item dropdown-item-text ps-2 ms-1 link-underline  link-underline-opacity-0  text-gray-600  ">contact</a>
+                                                        </li>
+                                                        <li><a
+                                                                class="  dropdown-item dropdown-item-text ps-2 ms-1 link-underline  link-underline-opacity-0  text-gray-600 ">blog</a>
+                                                        </li>
+                                                        <li><a
+                                                                class="  dropdown-item dropdown-item-text ps-2 ms-1 link-underline  link-underline-opacity-0  text-gray-600 ">blog-post</a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-6 ps-0 pe-3">
+                                                        <li><a
+                                                                class="  dropdown-item dropdown-item-text ps-2 ms-1 link-underline  link-underline-opacity-0  text-gray-600  ">Plans</a>
+                                                        </li>
+                                                        <li><a
+                                                                class=" dropdown-item dropdown-item-text ps-2 ms-1 link-underline  link-underline-opacity-0  text-gray-600  ">plan
+                                                                single</a>
+                                                        </li>
+                                                        <li><a
+                                                                class=" dropdown-item dropdown-item-text ps-2 ms-1 link-underline  link-underline-opacity-0  text-gray-600  ">register</a>
+                                                        </li>
+
+                                                    </div>
+                                                </div>
+
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-lg-6  ps-lg-3 pe-0 px-0 px-lg-auto  gy-2 mt-3 mt-lg-0     ">
+                                            <ul class=" list-unstyled px-0 px-lg-auto ">
+                                                <li>
+                                                    <span class=" dropdown-header mb-2 px-0">Utility pages</span>
+                                                </li>
+                                                <li><a
+                                                        class="  dropdown-item dropdown-item-text ps-0  link-underline  link-underline-opacity-0  text-gray-600  ">Start
+                                                        here</a>
+                                                </li>
+                                                <li><a
+                                                        class=" dropdown-item dropdown-item-text  ps-0 link-underline  link-underline-opacity-0  text-gray-600  ">register</a>
+                                                </li>
+                                                <li><a
+                                                        class=" dropdown-item dropdown-item-text  ps-0 link-underline  link-underline-opacity-0  text-gray-600  ">Styleguide</a>
+                                                </li>
+                                                <li><a
+                                                        class=" dropdown-item dropdown-item-text ps-0 link-underline  link-underline-opacity-0  text-gray-600  ">Password
+                                                        protected</a>
+                                                </li>
+                                                <li><a
+                                                        class="  dropdown-item dropdown-item-text ps-0 link-underline  link-underline-opacity-0  text-gray-600 ">404
+                                                        Not found</a>
+                                                </li>
+                                                <li><a
+                                                        class="  dropdown-item dropdown-item-text  ps-0 link-underline  link-underline-opacity-0  text-gray-600 ">Licenses</a>
+                                                </li>
+                                                <li><a
+                                                        class="  dropdown-item dropdown-item-text  ps-0 link-underline  link-underline-opacity-0  text-gray-600 ">Changelog</a>
+                                                </li>
+                                                <li><a
+                                                        class=" dropdown-item emphasize-link pt-3 px-0 mt-1  mb-2 fw-bold ">Browse
+                                                        More Templates</a>
+                                                </li>
+
+
+                                            </ul>
+
+                                        </div>
+
+                        </li>
+
+                    </ul>
+                    <div class="d-flex d-md-none mt-5 ">
+                        <button class="btn w-100  btn-primary border-0 text-600 rounded-3 mx-2 fw-bold"
+                            type="submit">Get
+                            Started</button>
+                    </div>
+                </div>
+
+                <!-- Right side items -->
+                <ul class="navbar-nav me-2 me-lg-3 mx-1 mb-lg-0 align-items-center d-lg-flex d-none ">
+                    <li class="nav-item ps-lg-1 pe-lg-0 pe-3 pt-1 pt-lg-0">
+                        <a class="nav-link" aria-current="page" href="#">Cart(0)</a>
+                    </li>
+                </ul>
+
+                <!-- Buttons -->
+                <div class="d-lg-flex d-none ">
+                    <button class="btn btn-light border rounded-3 shadow-sm mx-2" type="submit">Download App</button>
+                    <button class="btn btn-primary border-0 text-600 rounded-3 mx-2 fw-bold"
+                        type="submit">Register</button>
+                </div>
+
+            </nav>
+        </div>
+
+
+    </div>
+
+
+    <div class="hamburger-menu-wrapper w-nav-button" aria-label="menu" role="button" tabindex="0"
+        aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
+        <div class="hamburger-menu-bar top"></div>
+        <div class="hamburger-menu-bar bottom"></div>
+    </div>
+    <!-- -------- Section 1 ---------- -->
+    <div class="container-lg container-fluid">
+        <div class="row container-fluid py-5 px-lg-5 align-items-center">
+            <div class="col-lg-7 pe-lg-5 text-center text-lg-start">
+                <p class="h5 text-uppercase text-secondary pt-5 mt-5 fw-bold">ABOUT DELIVER X</p>
+                <h1 class="h1 mt-4">We are here to help amazing restaurants get great customers</h1>
+                <p class="fw-light mt-4 text-gray-400 pe-lg-5 pe-0">At morbi adipiscing sit sed consectetur senectus
+                    Dignissim sed
+                    amet
+                    tincidunt vitae ultricies ultrices amet fermentum amet neque et id sed lacinia massa pretium aliquam
+                    libero
+                    et.</p>
+            </div>
+            <div class="col-lg-5 col-md-9 col-11 mx-auto mt-lg-0 mt-5 pt-5">
+                <img src="./src/images/delivery-boy.png" class="w-100" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- -------- Section 2 ---------- -->
+    <div class="container mt-5 ">
+        <div class="row gx-5 gy-4 mb-5 pb-5 ">
+            <div class="col-md-3 col-6 text-center ">
+                <h2 class="h2 ">10M<span class="text-secondary ">+</span></h2>
+                <p class="  fw-normal  text-gray-400 ">Happy Customers</p>
+            </div>
+            <div class="col-md-3 col-6 text-center ">
+                <h2 class="h2 ">500K<span class="text-secondary ">+</span></h2>
+                <p class="  fw-normal  text-gray-400 ">Restaurants available</p>
+            </div>
+            <div class="col-md-3 col-6 text-center ">
+                <h2 class="h2 ">30M<span class="text-secondary ">+</span></h2>
+                <p class="  fw-normal  text-gray-400 ">Successful deliveries</p>
+            </div>
+            <div class="col-md-3 col-6 text-center ">
+                <h2 class="h2 ">99.9<span class="text-secondary ">%</span></h2>
+                <p class="  fw-normal  text-gray-400 ">Customer satisfaction</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- -------- Section 3 ---------- -->
+    <div class="container-fluid   bg-white py-5 ">
+        <div class=" row mx-auto align-items-center pt-4 mt-5  container-lg container-fluid    ">
+            <div class="col-12 col-lg-5 order-lg-3 order-1    text start ">
+                <p class="h5 text-uppercase text-secondary fw-bold">ABOUT US</p>
+                <h3 class="h3 mt-4">Our company started back in 2016</h3>
+                <p class="fw-light mt-4 text-gray-400 pe-lg-5 pe-0 ">At morbi adipiscing sit sed consectetur
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam,
+                    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    Nemo enim ipsam
+                    voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+                    qui ratione
+                    voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                    consectetur.</p>
+            </div>
+            <div class="col d-lg-flex order-2  d-none   "></div>
+            <div class="col-12 col-lg-6 order-lg-first mt-5 mt-lg-0 order-1  order-2  ">
+                <img src="./src/images/about.jpeg" class="rounded-5 img-shadow w-100" alt="">
+            </div>
+        </div>
+        <div class=" row mx-auto align-items-center pt-5 mt-5  container-lg container-fluid mb-5 pb-5   ">
+            <div class="col-12 col-lg-5   px-lg-4  ps-0   text start ">
+                <p class="h5 text-uppercase text-secondary fw-bold">Our mission</p>
+                <h3 class="h3 mt-4">Our mission is to disrupt the food industry</h3>
+                <p class="fw-light mt-4 text-gray-400 pe-lg-5 pe-0 ">Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    Nemo enim ipsam
+                    voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+            </div>
+            <div class="col d-lg-flex  d-none   "></div>
+            <div class="col-12 col-lg-6  mt-5 mt-lg-0   ">
+                <img src="./src/images/mission.jpeg" class="rounded-5 img-shadow w-100" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- -------- Section 4 ---------- -->
+
+    <div class="scroll-section container-lg container-fluid py-5 my-5 ">
+        <div class=" row mx-auto gx-lg-5  mt-5 container-lg container-fluid    ">
+            <div class="col-12 col-lg-6 mb-5 ">
+                <p class="h5 text-uppercase text-secondary fw-bold">OUR JOURNEY</p>
+                <h3 class="h3 mt-4">It has been a long but incredible journey</h3>
+                <p class="fw-light mt-4 text-gray-400 pe-lg-5  ">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. In harum quis, id nemo eveniet sequi! Pariatur nam ipsam
+                </p>
+                <button class="btn btn-primary border-0 text-600 rounded-3 mt-4 px-5 py-4  rounded-4  fw-bold"
+                    type="submit">Download
+                    App</button>
+            </div>
+            <div class="col-12 col-lg-6  ">
+                <div class="card rounded-4  mb-5 bg-white p-5 border-light  custom-shadow">
+                    <p class="h5 text-uppercase text-secondary fw-bold">2016</p>
+                    <h4 class="h4 mt-3">Deliver X was founded</h4>
+                    <p class="fw-light mt-4 text-gray-400 pe-lg-5 pe-0 ">Sed ut perspiciatis unde omnis iste natus error
+                        sit
+                        voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo.
+                        Nemo enim ipsam.
+                    </p>
+                </div>
+                <div class="card rounded-4 mb-5 bg-white p-5 border-light  custom-shadow">
+                    <p class="h5 text-uppercase text-secondary fw-bold">2016</p>
+                    <h4 class="h4 mt-3">Deliver X was founded</h4>
+                    <p class="fw-light mt-4 text-gray-400 pe-lg-5 pe-0 ">Sed ut perspiciatis unde omnis iste natus error
+                        sit
+                        voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo.
+                        Nemo enim ipsam.
+                    </p>
+                </div>
+                <div class="card rounded-4 mb-5 bg-white p-5 border-light  custom-shadow">
+                    <p class="h5 text-uppercase text-secondary fw-bold">2016</p>
+                    <h4 class="h4 mt-3">Deliver X was founded</h4>
+                    <p class="fw-light mt-4 text-gray-400 pe-lg-5 pe-0 ">Sed ut perspiciatis unde omnis iste natus error
+                        sit
+                        voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo.
+                        Nemo enim ipsam.
+                    </p>
+                </div>
+                <div class="card rounded-4 mb-5 bg-white p-5 border-light  custom-shadow">
+                    <p class="h5 text-uppercase text-secondary fw-bold">2016</p>
+                    <h4 class="h4 mt-3">Deliver X was founded</h4>
+                    <p class="fw-light mt-4 text-gray-400 pe-lg-5 pe-0 ">Sed ut perspiciatis unde omnis iste natus error
+                        sit
+                        voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo.
+                        Nemo enim ipsam.
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!----------- Section 5 ------------->
+    <div class="container-fluid  bg-white py-5  ">
+        <div class="col-12 col-sm-11 col-md-10 col-lg-6 my-5 py-5 text-center  mx-auto ">
+            <p class="h5  text-uppercase text-secondary fw-bold">OUR PARTNERS</p>
+            <h3 class="h3 mt-3">We don’t walk alone, Deliver X works thanks to our partners</h3>
+            <p class="fw-light mt-4 text-gray-400 pe-lg-5 pe-0 ">The pain itself should be followed by the adipiscing
+                elit tortor eu egestas morbi sem vulputate even facilisis
+                pellentesque as anyone.</p>
+        </div>
+
+        <div class="row gx-md-5 gy-md-5  container mb-3 mx-auto">
+            <div class="col-12 col-md-4 mb-5 text-center ">
+                <img src="./src/images/customers.svg" class="resposive-img   mx-auto " alt="">
+
+                <h4 class="h4b my-4"> Customers </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit
+                    nullam.</p>
+            </div>
+
+
+            <div class="col-12 col-md-4  mb-5 text-center ">
+                <img src="./src/images/restaurants.svg" class="resposive-img   mx-auto " alt="">
+
+                <h4 class="h4b my-4"> Restaurants </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit
+                    nullam.</p>
+            </div>
+
+            <div class="col-12 col-md-4  mb-5 text-center ">
+                <img src="./src/images/riders.svg" class="resposive-img   mx-auto " alt="">
+
+                <h4 class="h4b my-4"> Riders </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit
+                    nullam.</p>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!----------- Section 6 ------------->
+    <div class="container-lg container-fluid py-5 my-5 ">
+        <div class="col-12 col-sm-11 col-md-10 col-lg-6 my-3 py-5 text-center  mx-auto ">
+            <p class="h5  text-uppercase text-secondary fw-bold">PRESS & NEWS
+            </p>
+            <h3 class="h3 mt-3">See what the press says about Deliver X</h3>
+
+        </div>
+        <div class="container">
+            <div class="row g-5 justify-content-center">
+                <div class="col-md-10  col-12 col-lg-6  custom-column">
+                    <div class="rounded-5 card-hover bg-white p-5 border-light  ">
+                        <p class="h4 mt-5 fw-semibold">company</p>
+                        <h4 class="h4b mt-3">Deliver X raises $26M in series B funding for growth</h4>
+
+                        <div class="d-flex justify-content-between align-items-center my-5 w-100">
+                            <a class=" readmore h5 text-secondary fw-bold mb-0 cursor-pointer">Read
+                                more
+                                <i class="icon-move text-secondary  bi bi-arrow-up-right"></i>
+                            </a>
+                            <p class="mb-0 text-right">January 22, 2023</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-10  col-12 col-lg-6  custom-column">
+                    <div class="rounded-5 card-hover bg-white p-5 border-light ">
+                        <p class="h4 mt-5 fw-semibold">company</p>
+                        <h4 class="h4b mt-3">Deliver X raises $26M in series B funding for growth</h4>
+
+                        <div class="d-flex justify-content-between align-items-center my-5 w-100">
+                            <a class=" readmore h5 text-secondary fw-bold mb-0 cursor-pointer">Read
+                                more
+                                <i class="icon-move text-secondary  bi bi-arrow-up-right"></i>
+                            </a>
+                            <p class="mb-0 text-right">January 22, 2023</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-10  col-12 col-lg-6   custom-column">
+                    <div class="rounded-5 card-hover bg-white p-5 border-light ">
+                        <p class="h4 mt-5 fw-semibold">company</p>
+                        <h4 class="h4b mt-3">Deliver X raises $26M in series B funding for growth</h4>
+
+                        <div class="d-flex justify-content-between align-items-center my-5 w-100">
+                            <a class=" readmore h5 text-secondary fw-bold mb-0 cursor-pointer">Read
+                                more
+                                <i class="icon-move text-secondary  bi bi-arrow-up-right"></i>
+                            </a>
+                            <p class="mb-0 text-right">January 22, 2023</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-10  col-12 col-lg-6 custom-column">
+                    <div class="rounded-5 card-hover bg-white p-5 border-light">
+                        <p class="h4 mt-5 fw-semibold">company</p>
+                        <h4 class="h4b mt-3">Deliver X raises $26M in series B funding for growth</h4>
+
+                        <div class="d-flex justify-content-between align-items-center my-5 w-100">
+                            <a class=" readmore h5 text-secondary fw-bold mb-0 cursor-pointer">Read
+                                more
+                                <i class="icon-move text-secondary  bi bi-arrow-up-right"></i>
+                            </a>
+                            <p class="mb-0 text-right">January 22, 2023</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- -------- Section 7 ------------ -->
+
+
+
+    <div class="container-fluid bg-white mt-4 px-md-5 border-top">
+        <div class="row container  justify-content-between align-items-center mx-auto my-5 pt-5 pb-2">
+            <div class=" col-12 col-sm-6 col-lg-5">
+                <img src="./src/images/logo.svg" class="logo" alt="">
+                <p class="mt-4 pt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
+                    incididunt
+                    ut.</p>
+            </div>
+            <div class="d-md-flex col-12 col-lg-7 d-none justify-content-lg-end justify-content-start align-items-end">
+
+                <button class="btn btn-primary border-0 text-600 rounded-3 mx-2 px-4 py-3 fw-bold " type="submit"><i
+                        class="bi h4 bi-apple me-2"></i>Download for IOS</button>
+                <button class="btn btn-primary border-0 text-600 rounded-3 px-4 py-3 mx-2 fw-bold" type="submit"><i
+                        class="bi h4 bi-android2 me-2 mt-4"></i>Download for Android</button>
+            </div>
+            <div
+                class="d-md-none col-12 col-lg-7 d-flex justify-content-lg-end justify-content-center flex-column align-items-center">
+                <!-- Modified -->
+                <button class="btn btn-primary border-0 text-600 rounded-3 mx-2 mb-3 w-100 px-4 py-3 fw-bold"
+                    type="submit"><i class="bi h4 bi-apple me-2"></i>Download for IOS</button>
+                <button class="btn btn-primary border-0 text-600 rounded-3 mx-2 w-100 px-4 py-3 fw-bold"
+                    type="submit"><i class="bi h4 bi-android2 me-2"></i>Download for Android</button>
+            </div>
+        </div>
+
+        <hr class="container mx-auto">
+        <div class="row container mx-auto">
+            <div class="col-12 col-lg-7 col-xl-6">
+                <div class="   ">
+                    <div class="row py-lg-3   px-0 mt-2 mb-4  ">
+                        <div class="col-lg-6  gy-2  px-lg-auto px-0  ">
+                            <ul class=" list-unstyled  ">
+                                <li>
+                                    <span class=" fw-bold text-body h5 mb-2 px-0  ">Menu</span>
+                                </li>
+                                <div class="row mt-4">
+                                    <div class="col-6 px-0 ">
+                                        <li><a class="dropdown-item dropdown-item-text pb-1 ps-2 ms-1 link-underline  link-underline-opacity-0  text-gray-600  "
+                                                href="#">Home</a></li>
+                                        <li><a class="dropdown-item dropdown-item-text pb-1 ps-2 ms-1 link-underline  link-underline-opacity-0  text-gray-600  "
+                                                href="#">about</a></li>
+                                        <li><a class="dropdown-item dropdown-item-text pb-1 ps-2 ms-1 link-underline  link-underline-opacity-0  text-gray-600  "
+                                                href="#">contact</a></li>
+                                        <li><a class="dropdown-item dropdown-item-text pb-1 ps-2 ms-1 link-underline  link-underline-opacity-0  text-gray-600 "
+                                                href="#">blog</a></li>
+                                        <li><a class="dropdown-item dropdown-item-text pb-1 ps-2 ms-1 link-underline  link-underline-opacity-0  text-gray-600 "
+                                                href="#">blog-post</a></li>
+                                    </div>
+                                    <div class="col-6 ps-0 pe-3">
+                                        <li><a class="dropdown-item dropdown-item-text pb-1 ps-2 ms-1 link-underline  link-underline-opacity-0  text-gray-600 "
+                                                href="#">Plans</a></li>
+                                        <li><a class="dropdown-item dropdown-item-text pb-1 ps-2 ms-1 link-underline  link-underline-opacity-0  text-gray-600 "
+                                                href="#">plan single</a></li>
+                                        <li><a class="dropdown-item dropdown-item-text pb-1 ps-2 ms-1 link-underline  link-underline-opacity-0  text-gray-600 "
+                                                href="#">register</a></li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6  ps-lg-3 pe-0 px-0 px-lg-auto  gy-2 mt-3 mt-lg-0     ">
+                            <ul class=" list-unstyled px-0 px-lg-auto ">
+                                <li>
+                                    <span class=" fw-bold text-body h5 pb-5 px-0 ">Utility pages</span>
+                                </li>
+                                <li class="mt-4"><a
+                                        class="dropdown-item dropdown-item-text pb-1 ps-0  link-underline  link-underline-opacity-0  text-gray-600 "
+                                        href="#">Start here</a></li>
+                                <li><a class="dropdown-item dropdown-item-text pb-1 ps-0 link-underline  link-underline-opacity-0  text-gray-600 "
+                                        href="#">register</a></li>
+                                <li><a class="dropdown-item dropdown-item-text pb-1 ps-0 link-underline  link-underline-opacity-0  text-gray-600 "
+                                        href="#">Styleguide</a></li>
+                                <li><a class="dropdown-item dropdown-item-text pb-1 ps-0 link-underline  link-underline-opacity-0  text-gray-600 "
+                                        href="#">Password protected</a></li>
+                                <li><a class="dropdown-item dropdown-item-text pb-1 ps-0 link-underline  link-underline-opacity-0  text-gray-600 "
+                                        href="#">404 Not found</a></li>
+                                <li><a class="dropdown-item dropdown-item-text pb-1 ps-0 link-underline  link-underline-opacity-0  text-gray-600 "
+                                        href="#">Licenses</a></li>
+                                <li><a class="dropdown-item dropdown-item-text pb-1 ps-0 link-underline  link-underline-opacity-0  text-gray-600 "
+                                        href="#">Changelog</a></li>
+                                <li class="mt-3"><a
+                                        class=" h5 emphasize-link2 link-underline link-underline-opacity-0  pt-3 px-0 pb-1  mt-1 mb-2 fw-bold "
+                                        href="#">Browse More
+                                        Templates</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-xl-6 col-12 px-0 py-4">
+
+                <span class=" fw-bold text-body h5 pb-5 px-0 ">Available in</span>
+
+                <div class="row pt-4 g-4">
+                    <div class="col-xl-6 col-lg-12 col-md-6 col-12">
+                        <div class="row align-items-center">
+                            <div class="col-xl-4 col-auto">
+                                <img src="./src/images/sanfrasisco.svg" class="rounded-4" alt="">
+                            </div>
+                            <div class="col-xl-8 text-left  col-auto">
+                                <span class="fw-bold text-body   h5 pb-5">San Francisco, CA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12 col-md-6 col-12">
+                        <div class="row align-items-center">
+                            <div class="col-xl-4 col-auto">
+                                <img src="./src/images/newyork.svg" class="rounded-4" alt="">
+                            </div>
+                            <div class="col-xl-8 text-left  col-auto">
+                                <span class="fw-bold text-body   h5 pb-5">San Francisco, CA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12 col-md-6 col-12">
+                        <div class="row align-items-center">
+                            <div class="col-xl-4 col-auto">
+                                <img src="./src/images/seattle.svg" class="rounded-4" alt="">
+                            </div>
+                            <div class="col-xl-8 text-left  col-auto">
+                                <span class="fw-bold text-body   h5 pb-5">San Francisco, CA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12 col-md-6 col-12">
+                        <div class="row align-items-center">
+                            <div class="col-xl-4 col-auto">
+                                <img src="./src/images/losangeles.svg" class="rounded-4" alt="">
+                            </div>
+                            <div class="col-xl-8 text-left  col-auto">
+                                <span class="fw-bold text-body   h5 pb-5">San Francisco, CA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <hr class="mx-auto container ">
+
+        <div class="text-center py-3">
+            <p class="font-light">
+                Copyright © | Developed by <a class="text-secondary" href="https://zarakhan.netlify.app/">Zara Khan</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Open dropdown on hover
+        document.querySelector('.dropdown').addEventListener('mouseover', function () {
+            var dropdownToggle = this.querySelector('[data-bs-toggle="dropdown"]');
+            if (!dropdownToggle.classList.contains('show')) {
+                dropdownToggle.click();
+            }
+        });
+
+        // Close dropdown when cursor moves out of the dropdown area
+        document.body.addEventListener('mouseover', function (event) {
+            var dropdown = document.querySelector('.dropdown');
+            if (!dropdown.contains(event.target)) {
+                var dropdownToggle = dropdown.querySelector('[data-bs-toggle="dropdown"]');
+                if (dropdownToggle.classList.contains('show')) {
+                    dropdownToggle.click();
+                }
+            }
+        });
+    </script>
+    <!-- Bootstrap JavaScript and jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js "></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="path/to/node_modules/gsap/dist/gsap.min.js"></script>
+</body>
+
+</html>
