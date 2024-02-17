@@ -16,3 +16,15 @@ document.body.addEventListener("mouseover", function (event) {
     }
   }
 });
+
+// Wait for the DOM content to be fully loaded
+$(document).ready(function () {
+  // Select the navbar toggler button
+  const navbarToggleIcon = $("#navbarToggleIcon");
+
+  // Add a click event listener to the navbar toggler button
+  $(".navbar-toggler").click(function () {
+    // Toggle between the two icons when the button is clicked
+    navbarToggleIcon.toggleClass("bi-list bi-x-lg");
+  });
+});

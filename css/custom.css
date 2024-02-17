@@ -11480,6 +11480,14 @@ body {
   margin-left: auto;
 }
 
+.navbar-toggler {
+  border: 0;
+}
+.navbar-toggler:after {
+  content: none;
+  border: 0;
+}
+
 .dropdown-toggle::after {
   content: none;
 }
@@ -11742,16 +11750,43 @@ hr {
 
 .floating-img1 {
   position: absolute;
-  width: 45%;
+  width: 10%;
+  opacity: 0;
   left: -5%;
   bottom: 15%;
 }
 
 .floating-img2 {
   position: absolute;
-  width: 55%;
+  width: 30%;
+  opacity: 0;
   right: -10%;
   bottom: 5%;
+}
+
+.nav-animation {
+  top: -100px;
+  position: relative;
+}
+
+.nav-contents {
+  opacity: 0;
+}
+
+.float-item {
+  position: relative;
+  top: 20%;
+  opacity: 0;
+}
+
+.floatitem {
+  position: relative;
+  top: 20%;
+  opacity: 0;
+}
+
+.img1 {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=custom.css.map */

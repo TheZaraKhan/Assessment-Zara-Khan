@@ -16,9 +16,9 @@
 
 <body>
     <!-- ---------   NAV ------------- -->
-    <div class="bg-light py-3 custom-shadow">
+    <div class="bg-light py-3 custom-shadow nav-animation" id="navbar-animate">
         <div class="  container-lg ">
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg nav-contents" id="nav-contents">
 
                 <!-- Brand -->
                 <a class="navbar-brand ms-0 me-auto" href=""> <img src="./src/images/logo.svg" alt=""> </a>
@@ -37,8 +37,9 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i id="navbarToggleIcon" class="bi bi-list"></i>
                 </button>
+
 
                 <!-- Navbar links -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -53,8 +54,8 @@
                             <a class="nav-link" aria-current="page" href="#">Pricing</a>
                         </li>
                         <li class="nav-item ps-2 dropdown">
-                            <a class="shadow-none nav-link dropdown-toggle" href="#" role="button" id="navbarDropdown"
-                                data-bs-toggle="dropdown" aria-expanded="true">
+                            <a class="shadow-none nav-link shadow-none border-0 dropdown-toggle" href="#" role="button"
+                                id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="true">
                                 <span>Pages</span><i class="bi bi-chevron-down"></i>
                             </a>
                             <ul class="dropdown-menu rounded-4  bg-white   dropdown-menu-lg "
@@ -177,9 +178,13 @@
     <div class="container-lg container-fluid">
         <div class="row container-fluid py-5 ps-lg-5 align-items-center">
             <div class="col-lg-7 pe-lg-5 text-center text-lg-start">
-                <p class="h5 text-uppercase text-secondary pt-5 mt-5 fw-bold">ABOUT DELIVER X</p>
-                <h1 class="h1 mt-4">We are here to help amazing restaurants get great customers</h1>
-                <p class="fw-light mt-4 text-gray-400 pe-lg-5 pe-0">At morbi adipiscing sit sed consectetur senectus
+                <p id="float-up1" class=" float-item h5 text-uppercase text-secondary pt-5 mt-5 fw-bold">ABOUT DELIVER X
+                </p>
+                <h1 id="float-up2" class=" float-item  h1 mt-4">We are here to help amazing restaurants get great
+                    customers</h1>
+                <p id="float-up3" class=" float-item  fw-light mt-4 text-gray-400 pe-lg-5 pe-0">At morbi adipiscing sit
+                    sed
+                    consectetur senectus
                     Dignissim sed
                     amet
                     tincidunt vitae ultricies ultrices amet fermentum amet neque et id sed lacinia massa pretium aliquam
@@ -187,7 +192,7 @@
                     et.</p>
             </div>
             <div class="position-relative col-lg-5 col-md-9 col-11 mx-auto mt-lg-0 mt-5 pt-5">
-                <img src="./src/images/delivery-boy.png" class="w-100" alt="">
+                <img id="img1" src="./src/images/delivery-boy.png" class="w-100" alt="">
                 <img class=" floating-img1 rounded-4 img-shadow" src="./src/images/duplareburger.png" alt="">
                 <img class=" floating-img2 rounded-4  img-shadow" src="./src/images/delivery-time.svg" alt="">
 
@@ -198,19 +203,19 @@
     <!-- -------- Section 2 ---------- -->
     <div class="container mt-5 ">
         <div class="row gx-5 gy-4 mb-5 pb-5 ">
-            <div class="col-md-3 col-6 text-center ">
+            <div id="float-up1" class=" float-item2 col-md-3 col-6 text-center ">
                 <h2 class="h2 ">10M<span class="text-secondary ">+</span></h2>
                 <p class="  fw-normal  text-gray-400 ">Happy Customers</p>
             </div>
-            <div class="col-md-3 col-6 text-center ">
+            <div id="float-up2" class=" float-item2 col-md-3 col-6 text-center ">
                 <h2 class="h2 ">500K<span class="text-secondary ">+</span></h2>
                 <p class="  fw-normal  text-gray-400 ">Restaurants available</p>
             </div>
-            <div class="col-md-3 col-6 text-center ">
+            <div id="float-up3" class=" float-item2 col-md-3 col-6 text-center ">
                 <h2 class="h2 ">30M<span class="text-secondary ">+</span></h2>
                 <p class="  fw-normal  text-gray-400 ">Successful deliveries</p>
             </div>
-            <div class="col-md-3 col-6 text-center ">
+            <div id="float-up4" class="float-item2 col-md-3 col-6 text-center ">
                 <h2 class="h2 ">99.9<span class="text-secondary ">%</span></h2>
                 <p class="  fw-normal  text-gray-400 ">Customer satisfaction</p>
             </div>
@@ -235,7 +240,7 @@
                     consectetur.</p>
             </div>
             <div class="col d-lg-flex order-2  d-none   "></div>
-            <div class="col-12 col-lg-6 order-lg-first mt-5 mt-lg-0 order-1  order-2  ">
+            <div id="float-up1" class=" floatitem  col-12 col-lg-6 order-lg-first mt-5 mt-lg-0 order-1  order-2  ">
                 <img src="./src/images/about.jpeg" class="rounded-5 img-shadow w-100" alt="">
             </div>
         </div>
@@ -250,7 +255,7 @@
                     voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
             </div>
             <div class="col d-lg-flex  d-none   "></div>
-            <div class="col-12 col-lg-6  mt-5 mt-lg-0   ">
+            <div id="float-up1" class=" floatitem col-12 col-lg-6  mt-5 mt-lg-0   ">
                 <img src="./src/images/mission.jpeg" class="rounded-5 img-shadow w-100" alt="">
             </div>
         </div>
@@ -258,102 +263,148 @@
 
     <!-- -------- Section 4 ---------- -->
 
-    <div class="scroll-section container-lg container-fluid py-5 my-5 ">
-        <div class=" row mx-auto gx-lg-5  mt-5 container-lg container-fluid    ">
-            <div class="col-12 col-lg-6 mb-5 ">
+    <div class="scroll-section container-lg container-fluid py-5 my-5">
+        <div class="row mx-auto gx-lg-5 mt-5 container-lg container-fluid">
+            <div class="col-12 col-lg-6 d-lg-block d-none mt-lg-5 mb-5">
+                <div id="static-column">
+                    <p class="h5 text-uppercase text-secondary fw-bold">OUR JOURNEY</p>
+                    <h3 class="h3 mt-4">It has been a long but incredible journey</h3>
+                    <p class="fw-light mt-4 text-gray-400 pe-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. In harum quis, id nemo eveniet sequi! Pariatur nam ipsam
+                    </p>
+                    <button class="btn btn-primary border-0 text-600 rounded-3 mt-4 px-5 py-4 rounded-4 fw-bold"
+                        type="submit">Download
+                        App</button>
+                </div>
+            </div>
+            <div class="col-12 d-lg-none col-lg-6 mt-lg-5 mb-5">
+
                 <p class="h5 text-uppercase text-secondary fw-bold">OUR JOURNEY</p>
                 <h3 class="h3 mt-4">It has been a long but incredible journey</h3>
-                <p class="fw-light mt-4 text-gray-400 pe-lg-5  ">Lorem ipsum dolor sit amet consectetur adipisicing
+                <p class="fw-light mt-4 text-gray-400 pe-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing
                     elit. In harum quis, id nemo eveniet sequi! Pariatur nam ipsam
                 </p>
-                <button class="btn btn-primary border-0 text-600 rounded-3 mt-4 px-5 py-4  rounded-4  fw-bold"
+                <button class="btn btn-primary border-0 text-600 rounded-3 mt-4 px-5 py-4 rounded-4 fw-bold"
                     type="submit">Download
                     App</button>
-            </div>
-            <div class="col-12 col-lg-6  ">
-                <div class="card rounded-4  mb-5 bg-white p-5 border-light  custom-shadow">
-                    <p class="h5 text-uppercase text-secondary fw-bold">2016</p>
-                    <h4 class="h4 mt-3">Deliver X was founded</h4>
-                    <p class="fw-light mt-4 text-gray-400 pe-lg-5 pe-0 ">Sed ut perspiciatis unde omnis iste natus error
-                        sit
-                        voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                        explicabo.
-                        Nemo enim ipsam.
-                    </p>
-                </div>
-                <div class="card rounded-4 mb-5 bg-white p-5 border-light  custom-shadow">
-                    <p class="h5 text-uppercase text-secondary fw-bold">2016</p>
-                    <h4 class="h4 mt-3">Deliver X was founded</h4>
-                    <p class="fw-light mt-4 text-gray-400 pe-lg-5 pe-0 ">Sed ut perspiciatis unde omnis iste natus error
-                        sit
-                        voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                        explicabo.
-                        Nemo enim ipsam.
-                    </p>
-                </div>
-                <div class="card rounded-4 mb-5 bg-white p-5 border-light  custom-shadow">
-                    <p class="h5 text-uppercase text-secondary fw-bold">2016</p>
-                    <h4 class="h4 mt-3">Deliver X was founded</h4>
-                    <p class="fw-light mt-4 text-gray-400 pe-lg-5 pe-0 ">Sed ut perspiciatis unde omnis iste natus error
-                        sit
-                        voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                        explicabo.
-                        Nemo enim ipsam.
-                    </p>
-                </div>
-                <div class="card rounded-4 mb-5 bg-white p-5 border-light  custom-shadow">
-                    <p class="h5 text-uppercase text-secondary fw-bold">2016</p>
-                    <h4 class="h4 mt-3">Deliver X was founded</h4>
-                    <p class="fw-light mt-4 text-gray-400 pe-lg-5 pe-0 ">Sed ut perspiciatis unde omnis iste natus error
-                        sit
-                        voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                        explicabo.
-                        Nemo enim ipsam.
-                    </p>
-                </div>
+
             </div>
 
+            <div id="scrollable-column" class="col-12 col-lg-6">
+                <div class="card rounded-4 mb-5 bg-white p-5 border-light custom-shadow">
+                    <p class="h5 text-uppercase text-secondary fw-bold">2016</p>
+                    <h4 class="h4 mt-3">Deliver X was founded</h4>
+                    <p class="fw-light mt-4 text-gray-400 pe-lg-5 pe-0">Sed ut perspiciatis unde omnis iste natus error
+                        sit
+                        voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo.
+                        Nemo enim ipsam.
+                    </p>
+                </div>
+                <div class="card rounded-4 mb-5 bg-white p-5 border-light custom-shadow">
+                    <p class="h5 text-uppercase text-secondary fw-bold">2016</p>
+                    <h4 class="h4 mt-3">Deliver X was founded</h4>
+                    <p class="fw-light mt-4 text-gray-400 pe-lg-5 pe-0">Sed ut perspiciatis unde omnis iste natus error
+                        sit
+                        voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo.
+                        Nemo enim ipsam.
+                    </p>
+                </div>
+                <div class="card rounded-4 mb-5 bg-white p-5 border-light custom-shadow">
+                    <p class="h5 text-uppercase text-secondary fw-bold">2016</p>
+                    <h4 class="h4 mt-3">Deliver X was founded</h4>
+                    <p class="fw-light mt-4 text-gray-400 pe-lg-5 pe-0">Sed ut perspiciatis unde omnis iste natus error
+                        sit
+                        voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo.
+                        Nemo enim ipsam.
+                    </p>
+                </div>
+                <div class="card rounded-4 mb-5 bg-white p-5 border-light custom-shadow">
+                    <p class="h5 text-uppercase text-secondary fw-bold">2016</p>
+                    <h4 class="h4 mt-3">Deliver X was founded</h4>
+                    <p class="fw-light mt-4 text-gray-400 pe-lg-5 pe-0">Sed ut perspiciatis unde omnis iste natus error
+                        sit
+                        voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo.
+                        Nemo enim ipsam.
+                    </p>
+                </div>
+                <div class="card rounded-4 mb-5 bg-white p-5 border-light custom-shadow">
+                    <p class="h5 text-uppercase text-secondary fw-bold">2016</p>
+                    <h4 class="h4 mt-3">Deliver X was founded</h4>
+                    <p class="fw-light mt-4 text-gray-400 pe-lg-5 pe-0">Sed ut perspiciatis unde omnis iste natus error
+                        sit
+                        voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo.
+                        Nemo enim ipsam.
+                    </p>
+                </div>
+                <div class="card rounded-4 mb-5 bg-white p-5 border-light custom-shadow">
+                    <p class="h5 text-uppercase text-secondary fw-bold">2016</p>
+                    <h4 class="h4 mt-3">Deliver X was founded</h4>
+                    <p class="fw-light mt-4 text-gray-400 pe-lg-5 pe-0">Sed ut perspiciatis unde omnis iste natus error
+                        sit
+                        voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo.
+                        Nemo enim ipsam.
+                    </p>
+                </div>
 
+
+
+
+            </div>
         </div>
-
     </div>
+    </div>
+
+
+
     <!----------- Section 5 ------------->
     <div class="container-fluid  bg-white py-5  ">
         <div class="col-12 col-sm-11 col-md-10 col-lg-6 my-5 py-5 text-center  mx-auto ">
             <p class="h5  text-uppercase text-secondary fw-bold">OUR PARTNERS</p>
             <h3 class="h3 mt-3">We don’t walk alone, Deliver X works thanks to our partners</h3>
-            <p class="fw-light mt-4 text-gray-400 pe-lg-5 pe-0 ">The pain itself should be followed by the adipiscing
+            <p class="fw-light mt-4 text-gray-400 pe-lg-5 pe-0 ">The pain itself should be followed by the
+                adipiscing
                 elit tortor eu egestas morbi sem vulputate even facilisis
                 pellentesque as anyone.</p>
         </div>
 
         <div class="row gx-md-5 gy-md-5  container mb-3 mx-auto">
-            <div class="col-12 col-md-4 mb-5 text-center ">
+            <div id="float-up1" class=" floatitem  col-12 col-md-4 mb-5 text-center ">
                 <img src="./src/images/customers.svg" class="resposive-img   mx-auto " alt="">
 
                 <h4 class="h4b my-4"> Customers </h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
+                    sit
                     nullam.</p>
             </div>
 
 
-            <div class="col-12 col-md-4  mb-5 text-center ">
+            <div id="float-up1" class=" floatitem  col-12 col-md-4  mb-5 text-center ">
                 <img src="./src/images/restaurants.svg" class="resposive-img   mx-auto " alt="">
 
                 <h4 class="h4b my-4"> Restaurants </h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
+                    sit
                     nullam.</p>
             </div>
 
-            <div class="col-12 col-md-4  mb-5 text-center ">
+            <div id="float-up1" class=" floatitem col-12 col-md-4  mb-5 text-center ">
                 <img src="./src/images/riders.svg" class="resposive-img   mx-auto " alt="">
 
                 <h4 class="h4b my-4"> Riders </h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
+                    sit
                     nullam.</p>
             </div>
 
@@ -372,7 +423,7 @@
         </div>
         <div class="container">
             <div class="row g-5 justify-content-center">
-                <div class="col-md-10  col-12 col-lg-6  custom-column">
+                <div id="float-up1" class=" floatitem  col-md-10  col-12 col-lg-6  custom-column">
                     <div class="rounded-5 card-hover bg-white p-5 border-light  ">
                         <p class="h4 mt-5 fw-semibold">company</p>
                         <h4 class="h4b mt-3">Deliver X raises $26M in series B funding for growth</h4>
@@ -387,7 +438,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-10  col-12 col-lg-6  custom-column">
+                <div id="float-up1" class=" floatitem  col-md-10  col-12 col-lg-6  custom-column">
                     <div class="rounded-5 card-hover bg-white p-5 border-light ">
                         <p class="h4 mt-5 fw-semibold">company</p>
                         <h4 class="h4b mt-3">Deliver X raises $26M in series B funding for growth</h4>
@@ -402,7 +453,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-10  col-12 col-lg-6   custom-column">
+                <div id="float-up1" class=" floatitem col-md-10  col-12 col-lg-6   custom-column">
                     <div class="rounded-5 card-hover bg-white p-5 border-light ">
                         <p class="h4 mt-5 fw-semibold">company</p>
                         <h4 class="h4b mt-3">Deliver X raises $26M in series B funding for growth</h4>
@@ -417,7 +468,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-10  col-12 col-lg-6 custom-column">
+                <div id="float-up1" class=" floatitem  col-md-10  col-12 col-lg-6 custom-column">
                     <div class="rounded-5 card-hover bg-white p-5 border-light">
                         <p class="h4 mt-5 fw-semibold">company</p>
                         <h4 class="h4b mt-3">Deliver X raises $26M in series B funding for growth</h4>
@@ -444,14 +495,16 @@
 
 
     <div class="container-fluid bg-white mt-4 px-md-5 border-top">
-        <div class="row container  justify-content-between align-items-center mx-auto my-5 pt-5 pb-2">
-            <div class=" col-12 col-sm-6 col-lg-5">
+        <div class="row  container  justify-content-between align-items-center mx-auto my-5 pt-5 pb-2">
+            <div id="float-up1" class=" floatitem col-12 col-sm-6 col-lg-5">
                 <img src="./src/images/logo.svg" class="logo" alt="">
-                <p class="mt-4 pt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
+                <p class="mt-4 pt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod
+                    tempor
                     incididunt
                     ut.</p>
             </div>
-            <div class="d-md-flex col-12 col-lg-7 d-none justify-content-lg-end justify-content-start align-items-end">
+            <div id="float-up1"
+                class=" floatitem d-md-flex col-12 col-lg-7 d-none justify-content-lg-end justify-content-start align-items-end">
 
                 <button class="btn btn-primary border-0 text-600 rounded-3 mx-2 px-4 py-3 fw-bold " type="submit"><i
                         class="bi h4 bi-apple me-2"></i>Download for IOS</button>
@@ -461,10 +514,10 @@
             <div
                 class="d-md-none col-12 col-lg-7 d-flex justify-content-lg-end justify-content-center flex-column align-items-center">
                 <!-- Modified -->
-                <button class="btn btn-primary border-0 text-600 rounded-3 mx-2 mb-3 w-100 px-4 py-3 fw-bold"
-                    type="submit"><i class="bi h4 bi-apple me-2"></i>Download for IOS</button>
-                <button class="btn btn-primary border-0 text-600 rounded-3 mx-2 w-100 px-4 py-3 fw-bold"
-                    type="submit"><i class="bi h4 bi-android2 me-2"></i>Download for Android</button>
+                <button id="float-up1" class=" floatitem " btn btn-primary border-0 text-600 rounded-3 mx-2 mb-3 w-100
+                    px-4 py-3 fw-bold" type="submit"><i class="bi h4 bi-apple me-2"></i>Download for IOS</button>
+                <button id="float-up1" class=" floatitem " btn btn-primary border-0 text-600 rounded-3 mx-2 w-100 px-4
+                    py-3 fw-bold" type="submit"><i class="bi h4 bi-android2 me-2"></i>Download for Android</button>
             </div>
         </div>
 
@@ -585,7 +638,8 @@
 
         <div class="text-center py-3">
             <p class="font-light">
-                Copyright © | Developed by <a class="text-secondary" href="https://zarakhan.netlify.app/">Zara Khan</a>
+                Copyright © | Developed by <a class="text-secondary" href="https://zarakhan.netlify.app/">Zara
+                    Khan</a>
             </p>
         </div>
     </div>
@@ -593,7 +647,9 @@
     <!-- Bootstrap JavaScript and jQuery -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js "></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
     <script src="./js/custom.js"></script>
     <script src="./js/GSAP-animations.js"></script>
 </body>
